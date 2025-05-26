@@ -21,7 +21,7 @@ public class ProductModel {
     private String name;
 
     @Column(name = "nu_price")
-    private double price;
+    private Double price;
 
     @Column(name = "tx_unit")
     private String unit;

@@ -29,7 +29,7 @@ public class ProductService {
             .toList();
     }
 
-    public void delete(String id) {
+    public void deleteById(String id) {
         if (!productRepository.existsById(id)) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Product not found");
         }
